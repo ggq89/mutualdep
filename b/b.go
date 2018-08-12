@@ -10,7 +10,7 @@ type B struct {
 
 func New(a *a.A) *B {
 	return &B{
-		Pa:a,
+		Pa: a,
 	}
 }
 
