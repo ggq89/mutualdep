@@ -2,7 +2,6 @@ package b
 
 import (
 	"github.com/ggq89/mutualdep/a"
-	"fmt"
 )
 
 type B struct {
@@ -16,5 +15,5 @@ func New(a *a.A) *B {
 }
 
 func (b *B) DisplayC() {
-	fmt.Println(b.Pa.Pc)
+	b.Pa.Pc.Show()
 }
