@@ -1,6 +1,8 @@
 package c
 
-import "github.com/ggq89/mutualdep/a"
+import (
+	"github.com/ggq89/mutualdep/a/f"
+)
 
 type C struct {
 	Vc int
@@ -13,5 +15,5 @@ func New(i int) *C {
 }
 
 func (c *C) Show() {
-	a.Printf(c.Vc)
+	f.Printf(c.Vc)
 }

@@ -1,8 +1,6 @@
 package a
 
 import (
-	"fmt"
-
 	"github.com/ggq89/mutualdep/b"
 	"github.com/ggq89/mutualdep/c"
 )
@@ -24,8 +22,4 @@ func New(ic int) *A {
 
 func (a *A)GetC() *c.C {
 	return a.Pc
-}
-
-func Printf(v int)  {
-	fmt.Printf("%v", v)
 }
