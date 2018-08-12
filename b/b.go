@@ -1,19 +1,23 @@
 package b
 
 import (
-	"github.com/ggq89/mutualdep/a"
+	"github.com/ggq89/mutualdep/c"
 )
 
 type B struct {
-	Pa *a.A
+	Pa a
 }
 
-func New(a *a.A) *B {
+type a interface {
+	GetC() *c.C
+}
+
+func New(a a) *B {
 	return &B{
 		Pa:a,
 	}
 }
 
 func (b *B) DisplayC() {
-	b.Pa.Pc.Show()
+	b.Pa.GetC().Show()
 }

@@ -1,9 +1,10 @@
 package a
 
 import (
+	"fmt"
+
 	"github.com/ggq89/mutualdep/b"
 	"github.com/ggq89/mutualdep/c"
-	"fmt"
 )
 
 type A struct {
@@ -19,6 +20,10 @@ func New(ic int) *A {
 	a.Pb = b.New(a)
 
 	return a
+}
+
+func (a *A)GetC() *c.C {
+	return a.Pc
 }
 
 func Printf(v int)  {
