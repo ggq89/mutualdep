@@ -14,7 +14,7 @@ type a interface {
 
 func New(a a) *B {
 	return &B{
-		Pa:a,
+		Pa: a,
 	}
 }
 

@@ -12,7 +12,7 @@ type A struct {
 
 func New(ic int) *A {
 	a := &A{
-		Pc:c.New(ic),
+		Pc: c.New(ic),
 	}
 
 	a.Pb = b.New(a)
@@ -20,6 +20,6 @@ func New(ic int) *A {
 	return a
 }
 
-func (a *A)GetC() *c.C {
+func (a *A) GetC() *c.C {
 	return a.Pc
 }

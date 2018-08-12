@@ -10,7 +10,7 @@ type C struct {
 
 func New(i int) *C {
 	return &C{
-		Vc:i,
+		Vc: i,
 	}
 }
 
