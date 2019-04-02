@@ -6,6 +6,13 @@ Handling mutual dependencies in Golang
 
 相信不少 `Gopher` 在写 `Golang` 程序都遇到过 `import cycle not allowed` 问题，本人最近研读 [go-ethereum](https://github.com/ethereum/go-ethereum) 源码时，发现定义 `interface` 也能解决此问题， 还能解决连分包都不能解决的情况， 并且比分包更加简单快捷。下面逐个讲解 `分包` 和 `定义接口` 这两种方法。
 
+# 目录： #
+(1. 应用场景)[#1-应用场景]
+(2. 代码实现)[#2-代码实现]
+(3. 定义接口)[#3-定义接口]
+(4. 拆分包)[#4-拆分包]
+(5. 总结)[#5-总结]
+
 # 1. 应用场景
 
 假设有如下使用场景：
