@@ -28,7 +28,7 @@ Handling mutual dependencies in Golang
 
 * `package a` 代码如下：
 
-```go
+```golang
 package a
 
 import (
